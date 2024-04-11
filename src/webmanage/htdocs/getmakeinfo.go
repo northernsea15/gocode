@@ -5,7 +5,6 @@ import (
 	"net/http"
 	"os"
 	"strconv"
-	"a1/ip" 
 	// "regexp"
 	// "strconv"
 	// "strings"
