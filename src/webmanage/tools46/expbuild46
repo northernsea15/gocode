@@ -1,0 +1,10 @@
+#!/usr/bin/expect -f
+set timeout 5
+spawn scp build@10.12.234.45:/data/build/dwc.tar.gz /data/test/for-test/
+expect {
+	"password:" { send "02a37DF#d8e9\r"}
+	timeout     { exit 11 }
+}
+expect {
+       "$" { send "exit\r" }
+}

@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceRoot}/src/webmanage/func.go",
+      "cwd": "${workspaceRoot}",
+      "env": {},
+      "args": [
+        "-test.run",
+        "MyTestFunction"
+      ]
+    }
+  ]
+}
